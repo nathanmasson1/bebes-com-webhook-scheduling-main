@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Contato",
+    "description": "Entre em contato com o Ninho & Colo para duvidas, sugestoes de pauta ou parcerias sobre maternidade e bebes.",
+    "image": "/images/maternity-hero.png"
+  },
+  "hero": {
+    "label": "Contato",
+    "title": "Fale",
+    "titleAccent": "conosco",
+    "subtitle": "Tem uma duvida, sugestao de tema ou quer propor uma parceria alinhada a familias com bebes? Vamos conversar."
+  },
+  "methods": [
+    {
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><polyline points=\"22,6 12,13 2,6\"/></svg>",
+      "title": "E-mail",
+      "detail": "contato@maedacabecaaospes.com.br",
+      "description": "Respondemos assim que possivel."
+    },
+    {
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+      "title": "Instagram",
+      "detail": "@maedacabecaaospes",
+      "description": "Bastidores, listas e lembretes de cuidado."
+    }
+  ],
+  "form": {
+    "title": "Envie uma mensagem",
+    "subtitle": "Preencha o formulario abaixo e retornaremos o mais breve possivel.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Seu nome",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "subjectLabel": "Assunto",
+    "subjectPlaceholder": "Selecione um assunto",
+    "subjects": [
+      {
+        "value": "sugestao",
+        "label": "Sugestao de pauta"
+      },
+      {
+        "value": "duvida",
+        "label": "Duvida sobre maternidade"
+      },
+      {
+        "value": "parceria",
+        "label": "Proposta de parceria"
+      },
+      {
+        "value": "outro",
+        "label": "Outro"
+      }
+    ],
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Sua mensagem...",
+    "submitText": "Enviar mensagem",
+    "successText": "Mensagem enviada!"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "O conteudo substitui pediatra ou obstetra?",
+        "a": "Nao. O blog e informativo e nao substitui orientacao individual de profissionais de saude."
+      },
+      {
+        "q": "Posso sugerir um tema?",
+        "a": "Sim. Sugestoes de guias, duvidas frequentes e pautas de rotina familiar sao muito bem-vindas."
+      },
+      {
+        "q": "Vocês falam sobre enxoval?",
+        "a": "Sim. A proposta e ajudar familias a escolherem o essencial com menos ansiedade e mais clareza."
+      },
+      {
+        "q": "Fazem parcerias com marcas?",
+        "a": "Sim, desde que a parceria respeite familias, bebes e a independencia editorial do projeto."
+      }
+    ]
+  }
+}

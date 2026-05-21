@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Gravidez",
+    "slug": "gravidez",
+    "description": "Preparacao, bem-estar e organizacao para a chegada do bebe"
+  },
+  {
+    "name": "Recem-nascido",
+    "slug": "recem-nascido",
+    "description": "Primeiros cuidados, banho, trocas e sinais de conforto"
+  },
+  {
+    "name": "Sono do bebê",
+    "slug": "sono-do-bebe",
+    "description": "Rotinas, ambiente e noites mais tranquilas"
+  },
+  {
+    "name": "Enxoval",
+    "slug": "enxoval",
+    "description": "Escolhas praticas para montar o ninho sem exageros"
+  },
+  {
+    "name": "Amamentação",
+    "slug": "amamentacao",
+    "description": "Informacao e acolhimento para nutrir com mais seguranca"
+  },
+  {
+    "name": "Rotina familiar",
+    "slug": "rotina-familiar",
+    "description": "Organizacao da casa, vinculo e vida real com bebe"
+  }
+]

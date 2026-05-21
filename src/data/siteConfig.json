@@ -1,0 +1,49 @@
+{
+  "name": "Mãe da Cabeça aos Pés",
+  "description": "Guias acolhedores sobre maternidade, gravidez, rotina do bebe, enxoval e cuidado familiar.",
+  "url": "https://maedacabecaaospes.com.br",
+  "author": "Ninho & Colo",
+  "language": "pt-BR",
+  "logo": "/images/logo-principal.svg",
+  "footerLogo": "/images/logo-principal-claro.svg",
+  "favicon": "/favicon.svg",
+  "logoMark": "M",
+  "ctaText": "Ler guias",
+  "ctaHref": "/blog",
+  "theme": {
+    "primary": "#9f6f6a",
+    "accent": "#7f9b8e",
+    "font": "outfit",
+    "dark": "#3c3431"
+  },
+  "social": {
+    "instagram": "",
+    "twitter": "",
+    "facebook": "",
+    "pinterest": "",
+    "youtube": ""
+  },
+  "contact": {
+    "email": "contato@maedacabecaaospes.com.br",
+    "phone": "",
+    "address": "",
+    "name": ""
+  },
+  "legal": {
+    "terms_last_updated": "",
+    "privacy_last_updated": ""
+  },
+  "phone": "",
+  "address": "",
+  "ai": {
+    "openaiKey": ""
+  },
+  "footer": {
+    "copyright": "@2026",
+    "description": ""
+  },
+  "seo": {
+    "title": "Mãe da Cabeça aos Pés",
+    "description": "Guias acolhedores sobre maternidade, gravidez, rotina do bebe, enxoval e cuidado familiar."
+  }
+}

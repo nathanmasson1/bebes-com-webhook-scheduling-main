@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { isPostPublic } from '../../lib/postVisibility';
+
+const posts = (await getCollection('blog', ({ data }) => isPostPublic(data)))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="Guias"
+  description="Guias sobre maternidade, gravidez, cuidados com o bebe, enxoval e rotina familiar."
+>
+  <section class="blog-hero">
+    <div class="blog-hero-bg"></div>
+    <div class="container blog-hero-inner">
+      <span class="section-label">Guias</span>
+      <h1 class="blog-hero-title">
+        Leituras para
+        <span class="blog-hero-accent">cuidar com calma</span>
+      </h1>
+      <p class="section-subtitle">
+        Conteudos para acompanhar a gestacao, os primeiros cuidados e a rotina familiar com mais clareza.
+      </p>
+    </div>
+  </section>
+
+  <section class="blog-posts section">
+    <div class="container">
+      <div class="blog-grid stagger-children">
+        {posts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            image={post.data.image}
+            imageAlt={post.data.imageAlt}
+            category={post.data.category}
+            slug={post.id}
+            rating={post.data.rating}
+            badge={post.data.badge}
+            priceRange={post.data.priceRange}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .blog-hero {
+    position: relative;
+    padding: calc(var(--navbar-height) + var(--space-4xl)) 0 var(--space-4xl);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .blog-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-bg-warm), var(--color-bg-cool));
+    z-index: -1;
+  }
+
+  .blog-hero-title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-5xl);
+    font-weight: var(--fw-extrabold);
+    letter-spacing: 0;
+    margin-bottom: var(--space-lg);
+  }
+
+  .blog-hero-accent {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: var(--fw-regular);
+    font-style: italic;
+    color: var(--color-primary);
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+
+  @media (max-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

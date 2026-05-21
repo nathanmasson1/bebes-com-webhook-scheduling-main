@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "badge": "Maternidade com calma e informação",
+    "title": "Um cantinho seguro para viver a maternidade com mais leveza",
+    "subtitle": "Guias praticos sobre gravidez, enxoval, sono, amamentação, cuidados com o bebê e rotina familiar, escritos para acolher sem complicar.",
+    "ctaPrimary": {
+      "text": "Ver guias",
+      "href": "/blog"
+    },
+    "ctaSecondary": {
+      "text": "Conhecer o projeto",
+      "href": "/sobre"
+    },
+    "image": "/images/maternity-hero.png",
+    "stats": [
+      {
+        "number": "0-2",
+        "label": "anos do bebe"
+      },
+      {
+        "number": "40+",
+        "label": "temas essenciais"
+      },
+      {
+        "number": "100%",
+        "label": "acolhimento"
+      }
+    ]
+  },
+  "socialProof": {
+    "stats": [
+      {
+        "number": "9",
+        "suffix": "+",
+        "label": "fases acompanhadas",
+        "detail": "da gestação ao primeiro ano"
+      },
+      {
+        "number": "50",
+        "suffix": "+",
+        "label": "guias planejados",
+        "detail": "conteudo simples de consultar"
+      },
+      {
+        "number": "5",
+        "suffix": "",
+        "label": "pilares de cuidado",
+        "detail": "sono, banho, alimentação, enxoval e bem-estar"
+      },
+      {
+        "number": "24h",
+        "suffix": "",
+        "label": "rotina real",
+        "detail": "dicas para o dia e a madrugada"
+      }
+    ],
+    "brands": [
+      "Gravidez",
+      "Recem-nascido",
+      "Sono",
+      "Enxoval",
+      "Amamentacao",
+      "Rotina"
+    ]
+  },
+  "postsGrid": {
+    "label": "Guias",
+    "title": "Leituras para cuidar melhor",
+    "subtitle": "Conteudos pensados para tirar duvidas comuns e deixar a rotina com o bebê mais previsivel, afetiva e possivel.",
+    "limit": 6,
+    "ctaText": "Ver todos os guias",
+    "ctaHref": "/blog"
+  },
+  "about": {
+    "label": "Sobre o Mãe da Cabeça aos Pés",
+    "title": "Informação clara para",
+    "titleAccent": "uma rotina mais tranquila",
+    "text1": "O Mãe da Cabeça aos Pés nasceu para reunir orientacoes simples, humanas e bem organizadas para quem esta vivendo a chegada de um bebê.",
+    "text2": "Aqui, maternidade não precisa parecer perfeita. A ideia e ajudar mães, pais e cuidadores a escolher melhor, se preparar com calma e atravessar as fases com mais confianca.",
+    "ctaPrimary": {
+      "text": "Nossa história",
+      "href": "/sobre"
+    },
+    "ctaSecondary": {
+      "text": "Fale conosco",
+      "href": "/contato"
+    },
+    "features": [
+      {
+        "number": "01",
+        "title": "Gravidez e preparacao",
+        "description": "Listas, cuidados e conversas importantes antes da chegada do bebe."
+      },
+      {
+        "number": "02",
+        "title": "Primeiros cuidados",
+        "description": "Banho, trocas, sono, sinais de conforto e rotina do recem-nascido."
+      },
+      {
+        "number": "03",
+        "title": "Enxoval sem excesso",
+        "description": "Curadoria para montar um ninho funcional, bonito e adequado ao dia a dia."
+      }
+    ]
+  }
+}

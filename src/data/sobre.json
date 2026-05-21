@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "Sobre",
+    "description": "Conheca o Mãe da Cabeça aos Pés, um blog sobre maternidade, bebes, enxoval e rotina familiar.",
+    "image": "/images/maternity-hero.png"
+  },
+  "hero": {
+    "label": "Sobre nos",
+    "title": "Um espaco para acolher",
+    "titleAccent": "familias reais",
+    "subtitle": "Criamos guias simples e organizados para ajudar maes, pais e cuidadores nas escolhas e nos cuidados dos primeiros anos."
+  },
+  "story": {
+    "label": "Nossa historia",
+    "title": "Informacao clara para",
+    "titleAccent": "uma fase intensa",
+    "paragraphs": [
+      "A chegada de um bebe costuma vir com amor, cansaco, duvidas e muitas listas. O Mãe da Cabeça aos Pés nasceu para deixar esse caminho mais leve, reunindo conteudo pratico em uma linguagem tranquila.",
+      "Falamos sobre gravidez, enxoval, sono, primeiros cuidados, amamentacao e rotina familiar com foco no que ajuda no dia a dia.",
+      "Nosso compromisso e acolher sem romantizar e informar sem assustar."
+    ],
+    "stats": [
+      {
+        "number": "0-2",
+        "label": "anos do bebe"
+      },
+      {
+        "number": "40+",
+        "label": "temas essenciais"
+      },
+      {
+        "number": "5",
+        "label": "pilares de cuidado"
+      },
+      {
+        "number": "100%",
+        "label": "acolhimento"
+      }
+    ]
+  },
+  "values": {
+    "label": "Nossos valores",
+    "title": "O que nos guia",
+    "subtitle": "Cada conteudo nasce para simplificar decisoes e respeitar a realidade de cada familia.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Acolhimento primeiro",
+        "text": "Falamos com quem esta vivendo a rotina real, com noites quebradas, duvidas e aprendizados diarios."
+      },
+      {
+        "number": "02",
+        "title": "Clareza sem excesso",
+        "text": "Preferimos listas uteis, linguagem direta e orientacoes que cabem na vida cotidiana."
+      },
+      {
+        "number": "03",
+        "title": "Cuidado responsavel",
+        "text": "Conteudo informativo nao substitui atendimento individual de profissionais de saude."
+      },
+      {
+        "number": "04",
+        "title": "Enxoval consciente",
+        "text": "Ajudamos familias a pensarem no essencial, evitando compras por ansiedade ou excesso de promessa."
+      }
+    ]
+  },
+  "timeline": {
+    "label": "Jornada",
+    "title": "Fases que acompanhamos",
+    "items": [
+      {
+        "year": "Gestacao",
+        "title": "Preparar o ninho",
+        "text": "Organizacao da casa, enxoval, mala maternidade e conversas importantes antes da chegada."
+      },
+      {
+        "year": "0-3m",
+        "title": "Primeiros cuidados",
+        "text": "Banho, trocas, colo, sono, sinais de conforto e adaptacao da familia."
+      },
+      {
+        "year": "4-12m",
+        "title": "Rotina em construcao",
+        "text": "Sonecas, brincadeiras, alimentacao e pequenas transicoes do cotidiano."
+      },
+      {
+        "year": "Familia",
+        "title": "Cuidar de quem cuida",
+        "text": "Organizacao, rede de apoio, descanso possivel e bem-estar emocional."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vamos cuidar dessa fase",
+    "titleAccent": "com mais calma?",
+    "text": "Explore os guias e encontre informacoes simples para o dia a dia com bebe.",
+    "ctaPrimary": {
+      "text": "Ver guias",
+      "href": "/blog"
+    },
+    "ctaSecondary": {
+      "text": "Fale conosco",
+      "href": "/contato"
+    }
+  }
+}
