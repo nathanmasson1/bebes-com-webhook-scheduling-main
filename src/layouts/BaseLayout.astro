@@ -36,7 +36,7 @@ const {
   title,
   description,
   image = '/images/og-default.jpg',
-  canonicalURL = Astro.url.href,
+  canonicalURL: canonicalURLProp,
   type = 'website',
   pubDate,
   updatedDate,
@@ -48,6 +48,8 @@ const {
 
 const site = readData('siteConfig.json') || {};
 const siteName = site.name || 'Ninho & Colo';
+const siteUrl = (site.url || Astro.site?.toString() || Astro.url.origin).replace(/\/$/, '');
+const canonicalURL = canonicalURLProp || new URL(Astro.url.pathname, `${siteUrl}/`).toString();
 const pageAuthor = author || site.author || siteName;
 const fullTitle = `${title} | ${siteName}`;
 
@@ -62,14 +64,14 @@ const mainSchema: Record<string, unknown> = {
   publisher: {
     '@type': 'Organization',
     name: siteName,
-    url: Astro.site?.toString(),
+    url: siteUrl,
   },
 };
 
 if (type === 'article') {
   if (pubDate) mainSchema.datePublished = pubDate.toISOString();
   if (updatedDate) mainSchema.dateModified = updatedDate.toISOString();
-  if (image) mainSchema.image = new URL(image, Astro.site).toString();
+  if (image) mainSchema.image = new URL(image, `${siteUrl}/`).toString();
   mainSchema.author = { '@type': 'Person', name: pageAuthor };
   mainSchema.mainEntityOfPage = { '@type': 'WebPage', '@id': canonicalURL };
 
@@ -92,7 +94,7 @@ const productSchemas = products.filter(p => p.name).map((p) => {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: p.name,
-    ...(p.image ? { image: new URL(p.image, Astro.site).toString() } : {}),
+    ...(p.image ? { image: new URL(p.image, `${siteUrl}/`).toString() } : {}),
     ...(p.rating ? {
       aggregateRating: {
         '@type': 'AggregateRating',
@@ -120,7 +122,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     '@type': 'ListItem',
     position: i + 1,
     name: crumb.name,
-    item: new URL(crumb.url, Astro.site).toString(),
+    item: new URL(crumb.url, `${siteUrl}/`).toString(),
   })),
 } : null;
 ---
@@ -144,7 +146,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:image" content={new URL(image, `${siteUrl}/`)} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:locale" content="pt_BR" />
     {pubDate && <meta property="article:published_time" content={pubDate.toISOString()} />}
@@ -156,7 +158,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL(image, Astro.site)} />
+    <meta name="twitter:image" content={new URL(image, `${siteUrl}/`)} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -175,7 +177,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
       rel="alternate"
       type="application/rss+xml"
       title={siteName}
-      href={new URL('/rss.xml', Astro.site)}
+      href={new URL('/rss.xml', `${siteUrl}/`)}
     />
 
     <!-- JSON-LD: Main Schema -->
